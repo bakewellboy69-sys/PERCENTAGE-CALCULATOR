@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Percentage Calculator – Calculate Percentages Instantly</title>
+    <meta name="description" content="Free online percentage calculator. Calculate percentage increase, decrease, reverse percentage and more instantly. Simple, fast and accurate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Percentage Calculator</h1>
+    <p class="subtitle">Calculate percentages, increases and decreases instantly</p>
+
+    <div class="card">
+        <h2>1. What is X% of Y?</h2>
+        <input type="number" id="percent1" placeholder="Enter percentage (e.g. 20)">
+        <input type="number" id="number1" placeholder="Enter number (e.g. 150)">
+        <button onclick="calculateBasic()">Calculate</button>
+        <div class="result" id="result1"></div>
+    </div>
+
+    <div class="card">
+        <h2>2. Percentage Increase</h2>
+        <input type="number" id="increaseOriginal" placeholder="Original value">
+        <input type="number" id="increaseNew" placeholder="New value">
+        <button onclick="calculateIncrease()">Calculate</button>
+        <div class="result" id="result2"></div>
+    </div>
+
+    <div class="card">
+        <h2>3. Percentage Decrease</h2>
+        <input type="number" id="decreaseOriginal" placeholder="Original value">
+        <input type="number" id="decreaseNew" placeholder="New value">
+        <button onclick="calculateDecrease()">Calculate</button>
+        <div class="result" id="result3"></div>
+    </div>
+
+    <div class="ad-placeholder">
+        Advertisement Space
+    </div>
+
+    <section class="content">
+        <h2>What Is a Percentage?</h2>
+        <p>
+            A percentage represents a number as a fraction of 100. It is commonly used
+            in finance, statistics, shopping discounts, tax calculations and more.
+        </p>
+
+        <h2>How To Calculate Percentage Increase</h2>
+        <p>
+            Subtract the original number from the new number, divide by the original,
+            then multiply by 100.
+        </p>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I calculate 20% of a number?</h3>
+        <p>Multiply the number by 0.20.</p>
+
+        <h3>How do I calculate percentage change?</h3>
+        <p>Use the formula: (New − Original) ÷ Original × 100.</p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
